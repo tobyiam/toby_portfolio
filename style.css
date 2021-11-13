@@ -159,7 +159,7 @@ header nav ul li a:hover:not(.active) {
 }
 
 .work02 :hover {
-    background:black);
+    background:black;
     color: var(--primary-color);
     border-radius: 15px;
     text-shadow: none;
