@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+}
+
+body {
+    color:var(--tertiary-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    padding: 0px 40px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    align-self: center;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color:var(--primary-color);
+}
+
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 1.55vw;
+}
+
+header nav ul li a:hover:not(.active) {
+    background:var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    text-shadow: none
+}
+
+.active {
+    background-color: #04aa6d;
+}
+
+/* SECTION TITLE STYLES START */ 
+.portfolio {
+    display: flex;
+    align-items: center;
+    margin: 100px 5px 50px 5px;
+}
+
+.portfolio > h2 {
+    flex: 0 0 20%;
+}
+
+.portfolio > div {
+    flex: 0 0 70%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.portfolio > div > img {
+    width: 30%;
+    height: auto;
+    margin: 50px 0px 50px 0px;
+    display: flex;
+}
+
+.my-work{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.my-work > h2 {
+    flex: 0 0 20%;
+}
+
+.my-work > div {
+    flex: 0 0 80%;
+}
+
+.mywork-flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mywork-flex > a {
+    flex: 0 0 50%;
+}
+
+.mywork-flex > a > div {
+    width: 300px;
+    height: 200px;
+    background-color: violet;
+}
+
+.mywork-flex > a > div > p {
+    font-size: 20px;
+    font-weight: bold;
+    background-position: center;
+    content: var(--secondary-color);
+    padding: 0.5em 0em;
+    background-color: #FDEBD0;
+    display: inline;
+}
+
+.work01 {
+    background-image: url("./Run-buddy.PNG");
+    margin: 0 0 10px 0;
+}
+
+.work01 :hover {
+    background:var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    text-shadow: none
+}
+
+.work02 {
+    background-image: url("./work02.jpg");
+    margin: 0 0 10px 0;
+}
+
+.work02 :hover {
+    background:var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    text-shadow: none
+}
+
+.work03 {
+    background-image: url("./work03.jpg");
+    margin: 0 0 10px 0;
+}
+
+.work03 :hover {
+    background:var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    text-shadow: none
+}
+
+.work04 {
+    background-image: url("./work04.png");
+    margin: 0 0 10px 0;
+}
+
+.work04 :hover {
+    background:var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    text-shadow: none
+}
+
+.work05 {
+    background-image: url("./work05.jfif");
+    margin: 0 0 10px 0;
+}
+
+.work05 :hover {
+    background:var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 15px;
+    text-shadow: none
+}
+
+.yourwork {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.
