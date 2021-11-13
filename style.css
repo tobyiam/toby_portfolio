@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: lightgrey;
 }
 
 :root {
@@ -29,6 +30,7 @@ header {
     background-position: center;
     background-attachment: fixed;
     background-position: 80%;
+    background-image: url(/backgroundphoto1.jfif);
     z-index: 9999;
 }
 
@@ -81,7 +83,7 @@ header nav ul li a:hover:not(.active) {
 }
 
 .portfolio > div {
-    flex: 0 0 70%;
+    flex: 0 0 80%;
     font-weight: bold;
     font-size: 20px;
 }
@@ -96,6 +98,13 @@ header nav ul li a:hover:not(.active) {
 .my-work{
     display: flex;
     flex-wrap: wrap;
+}
+
+.my-work a:hover{
+    background: lightgrey;
+    color:lightskyblue;
+    border-radius: 15px;
+    text-shadow: none
 }
 
 .my-work > h2 {
@@ -128,7 +137,7 @@ header nav ul li a:hover:not(.active) {
     background-position: center;
     content: var(--secondary-color);
     padding: 0.5em 0em;
-    background-color: #FDEBD0;
+    background-color:white;
     display: inline;
 }
 
@@ -138,10 +147,10 @@ header nav ul li a:hover:not(.active) {
 }
 
 .work01 :hover {
-    background:var(--tertiary-color);
+    background:black;
     color: var(--primary-color);
     border-radius: 15px;
-    text-shadow: none
+    text-shadow: none;
 }
 
 .work02 {
@@ -150,10 +159,10 @@ header nav ul li a:hover:not(.active) {
 }
 
 .work02 :hover {
-    background:var(--tertiary-color);
+    background:black);
     color: var(--primary-color);
     border-radius: 15px;
-    text-shadow: none
+    text-shadow: none;
 }
 
 .work03 {
@@ -162,10 +171,10 @@ header nav ul li a:hover:not(.active) {
 }
 
 .work03 :hover {
-    background:var(--tertiary-color);
+    background:black;
     color: var(--primary-color);
     border-radius: 15px;
-    text-shadow: none
+    text-shadow: none;
 }
 
 .work04 {
@@ -174,10 +183,10 @@ header nav ul li a:hover:not(.active) {
 }
 
 .work04 :hover {
-    background:var(--tertiary-color);
+    background:black;
     color: var(--primary-color);
     border-radius: 15px;
-    text-shadow: none
+    text-shadow: none;
 }
 
 .work05 {
@@ -186,10 +195,10 @@ header nav ul li a:hover:not(.active) {
 }
 
 .work05 :hover {
-    background:var(--tertiary-color);
+    background:black;
     color: var(--primary-color);
     border-radius: 15px;
-    text-shadow: none
+    text-shadow: none;
 }
 
 .yourwork {
@@ -198,4 +207,65 @@ header nav ul li a:hover:not(.active) {
     justify-content: center;
 }
 
-.
+.section nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio > div > nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.portfolio > div > nav ul li {
+    float: left;
+}
+
+.portfolio > div > nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.portfolio > div > nav ul li a:hover {
+    background-color: var(--tertiary-color);
+}
+
+
+/*MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    .portfolio {
+        padding: 30px 15px;
+    }
+
+    .portfolio h2 {
+        flex: 1 100%;
+        text-align: center;
+    }
+
+    .portfolio > div {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .portfolio {
+        width: 100%;
+    }   
+    
+    .portfolio h2 {
+        width: 95%;
+        flex: 0 20%;
+    }
+
+    .portfolio > div {
+        flex: 0 80%;
+    }
+}
