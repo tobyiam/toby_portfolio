@@ -13,7 +13,7 @@
 body {
     color:var(--tertiary-color);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: lightgrey;
+    background-color: #EBF5Fb;
 }
 
 header {
@@ -38,7 +38,7 @@ header h1 {
     font-weight: bold;
     margin: 0;
     font-size: 40px;
-    color:var(--primary-color);
+    color:white;
     background-color: none;
 }
 
@@ -60,7 +60,8 @@ header nav ul {
 header nav ul li a {
     padding: 10px 15px;
     font-weight: bold;
-    font-size: 1.55vw;
+    color: white;
+    font-size: 2.00vw;
     background-color: none;
 }
 
@@ -142,7 +143,7 @@ header nav ul li a:hover:not(.active) {
     background-position: center;
     content: var(--secondary-color);
     padding: 0.5em 0em;
-    background-color:white;
+    background-color:#EBF5Fb;
     display: inline;
 }
 
@@ -152,7 +153,6 @@ header nav ul li a:hover:not(.active) {
 }
 
 .work01 :hover {
-    background:black;
     color: var(--primary-color);
     border-radius: 15px;
     text-shadow: none;
@@ -164,7 +164,6 @@ header nav ul li a:hover:not(.active) {
 }
 
 .work02 :hover {
-    background:black;
     color: var(--primary-color);
     border-radius: 15px;
     text-shadow: none;
@@ -176,7 +175,6 @@ header nav ul li a:hover:not(.active) {
 }
 
 .work03 :hover {
-    background:black;
     color: var(--primary-color);
     border-radius: 15px;
     text-shadow: none;
@@ -188,7 +186,6 @@ header nav ul li a:hover:not(.active) {
 }
 
 .work04 :hover {
-    background:black;
     color: var(--primary-color);
     border-radius: 15px;
     text-shadow: none;
@@ -200,7 +197,6 @@ header nav ul li a:hover:not(.active) {
 }
 
 .work05 :hover {
-    background:black;
     color: var(--primary-color);
     border-radius: 15px;
     text-shadow: none;
@@ -233,11 +229,14 @@ header nav ul li a:hover:not(.active) {
     display: block;
     text-align: center;
     padding: 16px;
+    flex: 0 0 80%;
     text-decoration: none;
+    color:var(--tertiary-color);
 }
 
 .portfolio > div > nav ul li a:hover {
-    background-color: var(--tertiary-color);
+  color:var(--primary-color);
+  text-decoration: underline;
 }
 
 
