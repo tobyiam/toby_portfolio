@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: lightgrey;
 }
 
 :root {
@@ -14,6 +13,7 @@
 body {
     color:var(--tertiary-color);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: lightgrey;
 }
 
 header {
@@ -31,7 +31,6 @@ header {
     background-position: center;
     background-attachment: fixed;
     background-position: 80%;
-    background-image: url(/backgroundphoto1.jfif);
     z-index: 9999;
 }
 
@@ -80,11 +79,12 @@ header nav ul li a:hover:not(.active) {
 .portfolio {
     display: flex;
     align-items: center;
-    margin: 100px 5px 50px 5px;
+    margin: 100px 5px 50px 40px;
 }
 
 .portfolio > h2 {
     flex: 0 0 20%;
+    font-size: 35px;
 }
 
 .portfolio > div {
@@ -268,9 +268,23 @@ header nav ul li a:hover:not(.active) {
     .portfolio h2 {
         width: 95%;
         flex: 0 20%;
+        margin: 0 0 0 10px;
     }
 
     .portfolio > div {
         flex: 0 80%;
     }
+    
+    .section > div > img {
+        flex: 0 80%;
+    }
+
+    header {
+        display: flex;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
 }
+
